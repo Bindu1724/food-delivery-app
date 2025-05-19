@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+
+
+</head>
+
+<body>
+    <!--Header Section-->
+    <header>
+        <nav class="navbar">
+            <div class="logo"><i>Healthy<span style="color: rgb(122, 10, 111);">Eats</span></i></div>
+            
+            <div class="nav-links">
+                <a href="home.html" class="nav-item nav-link">HOME</a>
+                <a href="about.html" class="nav-item nav-link">ABOUT US</a>
+                <a href="service.html" class="nav-item nav-link">SERVICE</a>
+                <a href="menu.html" class="nav-item nav-link">MENU</a>
+                <a href="contact.html" class="nav-item nav-link">CONTACT</a>
+                <button style="background-color: rgb(122, 10, 111); color:aliceblue; cursor: pointer; width:100px; height:50px;"onclick="document.location='default.asp' ">LOGIN</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="home">
+    <div class="home-content">
+        <h1 class="home-title" style="letter-spacing:1px;">HOME</h1>
+        <h3 class="home-description">Welcome to HealthyEats!!<br><br> Your go-to destination for delicious and nutritious meals!</h3>
+        <img src="templates/logo.jpg" alt="HealthyEats Logo" class="home-image" >
+    </div>
+    </section>
+    
+    <section class="about">
+    <div class="about-content">
+        <h1 class="about-title" style="letter-spacing:1px;">ABOUT US</h1>
+        <p class="about-description">Enjoy your healthy and delicious food!!<br><br><br>We are dedicated to providing you with the best food delivery experience, ensuring that you enjoy healthy and tasty options right at your doorstep. Our team of culinary experts carefully curates a diverse menu that caters to various dietary preferences, so you can indulge in guilt-free eating.
+        <br><br><br>Join us on this journey towards a healthier lifestyle, one meal at a time!</p>
+        <img src="templates/veggies.jpg" alt="HealthyEats Logo" class="about-image">
+        
+    </div>
+    </section>
+
+    <section class="service">
+    <div class="service-content">
+        <h1 class="service-title" style="letter-spacing:1px;">OUR  SERVICES</h1>
+        <h3 class="service-description" style="letter-spacing:2px;">Explore Our Services</h3>
+    </div>
+    
+    <div class="grid-container">
+        <div class="card">
+            <i class="fas fa-user-tie"></i>
+            <h3>Master Chefs</h3>
+            <p>Our expert chefs craft nutritious meals that are as delicious as they are wholesome.<br> <br> Every dish is prepared with fresh, high-quality ingredients to nourish your body and soul.</p>
+            
+        </div>
+        <div class="card">
+            <i class="fas fa-utensils"></i>
+            <h3>Quality Food</h3>
+            <p>"We use only the freshest and healthiest ingredients to bring you the best dining experience.<br> <br>Quality meets wellness—delicious meals made with care for a healthier lifestyle!"</p>
+            </div>
+        <div class="card">
+            <i class="fas fa-shopping-cart"></i>
+            <h3>Online Order</h3>
+            <p>Healthy eating made easy—order online and enjoy fresh, nutritious meals at home! <br> <br>Your wellness journey starts with a click—delicious, balanced meals delivered to you.</p>
+            
+        </div>
+        <div class="card">
+            <i class="fas fa-headset"></i>
+            <h3>24/7 Service</h3>
+            <p>Healthy cravings? We’ve got nutritious options for you, anytime—day or night! <br><br>Wholesome food, available 24/7, because your well-being matters.</p>
+        </div>
+    </div>
+
+    </section>
+
+    <section class="menu">
+    <div class="menu-content">
+        <h1 class="menu-title" style="letter-spacing:1px;">MENU</h1>
+        <h3 class="menu-description" style="letter-spacing:2px;">Check Our Nutritious Menu</h3>
+    </div>
+    
+    <div class="menu-grid">
+        <div id="tab-1" class="tab-pane">
+                <div class="column g-4 menu-item">
+                    <img src="templates/Dosa.jpg" alt="" style="width: 80px; height:120px;">
+                    <div class="menu-text">
+                        <h5>Ragi Dosa</h5>
+                        <hr>
+                        <h4>Rs.30/-</h4>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="templates/Idli.jpg" alt="" style="width: 80px; height:120px;">
+                    <div class="menu-text">
+                        <h5>Ragi Idli</h5>
+                        <hr>
+                        <h4>Rs.30/-</h4>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="templates/millet vada.jpg" alt="" style="width: 80px; height:120px;">
+                    <div class="menu-text">
+                        <h5>Millets Vada</h5>
+                        <hr>
+                        <h4>Rs.40/-</h4>
+                    </div>
+                </div>
+        </div>
+    
+
+        <div id="tab-2" class="tab-pane">
+            <div class="menu-item">
+                <img src="templates/sprouts.jpg" alt="" style="width: 80px; height:120px;">
+                <div class="menu-text">
+                    <h5>Sprouts</h5>
+                    <hr>
+                    <h4>Rs.40/-</h4>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="templates/fruit-bowl.jpg" alt="" style="width: 80px; height:120px;">
+                <div class="menu-text">
+                    <h5>Fruits Bowl</h5>
+                    <hr>
+                    <h4>Rs.80/-</h4>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="templates/oats jar.jpg" alt="" style="width: 80px; height:120px;">
+                <div class="menu-text">
+                    <h5>Oats Jar</h5>
+                    <hr>
+                    <h4>Rs.60/-</h4>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-3" class="tab-pane">
+             <div class="row g-4 menu-item">
+                <img src="templates/dal khichdi.jpg" alt="" style="width: 80px; height:120px;">
+                <div class="menu-text">
+                    <h5>Dal Khichdi</h5>
+                    <hr>
+                    <h4>Rs.50/-</h4>
+                </div>
+            </div>
+            <div class="menu-item"> 
+               <img src="templates/coconut lime fush with rice.jpg" alt="" style="width: 80px; height:120px;">
+                <div class="menu-text">
+                   <h5>Coconut lime fish with rice</h5>
+                   <hr>
+                   <h4>Rs.120/-</h4>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="templates/rajma with rice.jpg" alt="" style="width: 80px; height:120px;">
+                <div class="menu-text">
+                    <h5>Rajma with Rice</h5>
+                    <hr>
+                    <h4>Rs.80/-</h4>
+                </div>
+            </div> 
+        </div>
+         
+
+        <div id="tab-4" class="tab-pane">
+            <div class="menu-item">
+                <img src="templates/ice_cream.jpg" alt="" style="width: 80px; height:120px;">
+                <div class="menu-text">
+                    <h5>Zero Calories Ice Cream</h5>
+                    <hr>
+                    <h4>Rs.50/-</h4>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="templates/pizza.jpg" alt="" style="width: 80px; height:120px;">
+                <div class="menu-text">
+                    <h5>Pizza</h5>
+                    <hr>
+                    <h4>Rs.100/-</h4>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="templates/burger.jpg" alt="" style="width: 80px; height:120px;">
+                <div class="menu-text">
+                   <h5>Burger</h5>
+                    <hr>
+                    <h4>Rs.80/-</h4>
+                </div>
+            </div>
+        </div>
+        
+
+        <div id="tab-5" class="tab-pane">
+            <div class="menu-item">
+                <img src="templates/Ragi Java.jpg" alt="" style="width: 80px; height:120px;">
+                <div class="menu-text">
+                    <h5>Ragi Java</h5>
+                    <hr>
+                    <h4>Rs.30/-</h4>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="templates/smoothie.jpg" alt="" style="width: 80px; height:120px;">
+                <div class="menu-text">
+                    <h5>Smoothies</h5>
+                    <hr>
+                    <h4>Rs.50/-</h4>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="templates/fatloss drinks.jpg" alt="" style="width: 80px; height:120px;">
+                <div class="menu-text">
+                    <h5>Fat Loss Drinks</h5>
+                    <hr>
+                    <h4>Rs.50/-</h4>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-6" class="tab-pane">
+            <div class="menu-item">
+                <img src="templates/tres leches cake.jpg" alt="" style="width: 80px; height:120px;">
+                <div class="menu-text">
+                    <h5>Tres leches cake</h5>
+                    <hr>
+                    <h4>Rs.90/-</h4>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="templates/seeds and nuts bar.jpg" alt="" style="width: 80px; height:120px;">
+                <div class="menu-text">
+                    <h5>Seeds and Nuts Bar</h5>
+                    <hr>
+                    <h4>Rs.40/-</h4>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="templates/Tea.jpg" alt="" style="width: 80px; height:120px;">
+                <div class="menu-text">
+                   <h5>Healthy Teas</h5>
+                    <hr>
+                    <h4>Rs.20/-</h4>
+                </div>
+            </div>
+        </div>
+        
+    </div>          
+    </section>
+
+    <section class="contact">
+    <h1 class="contact-title" style="letter-spacing:1px;">CONTACT</h1>
+    <h3 class="contact-description">Feel Free To Contact Us</h3>
+
+    <div class="contact-row"> 
+        <div class="address-content">
+            <h4 class="address-title" style="letter-spacing:3px; color:#ff0066; font-size:larger;"><i>Get In Touch</i></h4>
+            <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i>+012 345 67890</p>
+            <p><i class="fa fa-envelope"></i>info@example.com</p>   
+        </div>
+
+    <div class ="social-media">
+        <h4 class="social-media-title" style="letter-spacing:3px; color:#ff0066; font-size:larger"><i>Follow Us</i></h4>
+        <div class="icon-box">
+        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <div class="hours">
+        <h4 class="hours-title" style="letter-spacing:3px; color:#ff0066; font-size:larger"><i>Open Hours</i></h4>
+        <h5 class="day">Monday - Friday</h5>
+        <p>8.00 AM - 8.00 PM</p>
+        <h5 class="weekends">Saturday - Sunday</h5>
+        <p>2.00 PM - 8.00 PM</p>
+    </div>
+
+    <div class="newsletter">
+        <h4 class="newsletter-title" style="letter-spacing:3px; color:#ff0066; font-size:larger"><i>News Letter</i></h4>
+        <p>Subscribe to our newsletter for the latest updates</p>
+        <div class="input-group ">
+            <input type="text" class="form-control border-light" style="padding: 20px;" placeholder="Your Email">
+        </div>
+        <button type="button" class="btn" style="cursor: pointer;">Sign Up</button>
+    </div>
+    </div>
+    </section>
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footer-content">
+            <h3>&copy; 2025- HealthyEats. All Rights Reserved.<br><br>Designed by Bindu</h3>
+    </footer>
+
+</body>
+</html>
