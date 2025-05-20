@@ -14,7 +14,7 @@
     justify-content:space-around;
     align-items:center;
     padding: 10px 10px;
-    background-color:antiquewhite;
+    background-color:beige;
     
 }
 
@@ -36,26 +36,46 @@ body {
     text-decoration: underline;
     padding: 20px 20px;
     margin: auto;   
+    font-family: sans-serif;
+    position: relative;
 }
+
 
 .home-description{
-    padding: 60px;
-    top: 25%;
-    left: 50%;
-    position:absolute;
-    font-style: oblique;
-    font-size:35px;
-    font-family: default;
+    
+    letter-spacing: 3px;
     margin:auto;
     color:rgb(122, 10, 111);
-    letter-spacing: 2px;
+    font-family: serif;
+    font-weight: bold;
+    font-size:30px;
+    padding: 40px;
+    text-align:center;
+    margin-bottom: 160px;
+    position: relative;
+    line-height: 1.5em;
 }
 
-.home-image{
-  position:center;
-  padding: 60px 50px;
 
-} 
+.home::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    background: url('home.jpg') no-repeat center/cover; /* Background image */
+    opacity: 0.4; 
+    
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.home-description {
+    animation: fadeIn 2s ease-in-out;
+}
+
 
 /*About Section*/
 .about-title{
@@ -64,23 +84,39 @@ body {
     text-decoration: underline;
     padding: 20px 20px;
     margin: auto;
+    font-family: sans-serif;
    
 }
 
 .about-description{
     padding: 40px;
-    font-style: oblique;
     font-size:26px;
     font-weight: bold;
+    font-family: serif;
     margin:auto;
     color:rgb(122, 10, 111);
+    text-align:center;
+    margin-bottom: 25px;
+    
 }
 
-.about-image{
-  padding: 40px 40px;
-  max-width: 50%; /* Adjust the size as needed */ 
-  margin-left: 350px;
+.about::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    background: url('templates/veggies.jpg') no-repeat center/cover; /* Background image */
+    opacity: 0.1;
+    
+}
 
+@keyframes slideIn {
+    0% { transform: translateX(-100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+.about-description {
+    animation: slideIn 1.5s ease-out;
 }
 
 
@@ -91,18 +127,19 @@ body {
     text-decoration: underline;
     padding: 20px 20px;
     margin: auto;
+    font-family: sans-serif;
    
 }
 
 .service-description{
     text-align:center;
-    font-style: oblique;
-    font-size:30px;
     font-weight: bold;
-    font-family: default;
-    margin:20px;
+    font-family: serif;
     color:rgb(122, 10, 111);
-    letter-spacing: 2px;
+    font-size: 26px;
+    margin:auto;    
+    padding: 20px;
+    
 }
 
 .grid-container {
@@ -111,7 +148,8 @@ body {
     gap: 30px; /* Spacing between grid items */
     padding: 20px;
     color:rgb(122, 10, 111);
-    font-size: 22px;;
+    font-size: 22px;
+    
 }
 
 .card {
@@ -120,6 +158,7 @@ body {
     text-align: center;
     border-radius: 20px; /* Rounded corners */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    
 }
 
   /* Icon styling */
@@ -127,17 +166,30 @@ body {
     font-size: 30px; /* Icon size */
     color:rgb(122, 10, 111);/* Icon color */
     margin-bottom: 10px;
+    
+    
 }
 
 
 .card:hover{
     background-color: #f66b4c; /* Different background color */
     color: white; /* Text color */
+   
 }
 
 .card i:hover{
     color: white; /* Icon color */
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.grid-container {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
 
 /* Menu Section */
 .menu-title{
@@ -146,18 +198,19 @@ body {
     text-decoration: underline;
     padding: 20px 20px;
     margin: auto;
+    font-family: sans-serif;
    
 }
 
 .menu-description{
     text-align:center;
-    font-style: oblique;
-    font-size:30px;
+    font-size:26px;
     font-weight: bold;
-    font-family: default;
-    margin:20px;
+    font-family: serif;
+    margin:auto;
     color:rgb(122, 10, 111);
-    letter-spacing: 2px;
+    padding: 20px;
+    
 }
 
 
@@ -167,6 +220,11 @@ body {
     align-items: center; /* Center items vertically */
     gap: 30px; /* Adds spacing between image and text */
     margin-bottom: 15px; /* Space between menu items */
+    
+}
+
+.menu-item:hover {
+    transform: scale(1.09);
 }
 
 .menu-item img {
@@ -177,6 +235,7 @@ body {
 .menu-text {
     font-size: 18px;
     color: rgb(122, 10, 111);
+    font-family: serif;
     
 }
 
@@ -189,7 +248,28 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    
 }
+
+@keyframes slideIn {
+    0% { transform: translateX(-100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+.menu-item{
+    animation: slideIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.menu-grid {
+    animation: fadeIn 2s ease-in-out;
+}
+
+
 
 /*contact Section*/
 .contact-title{
@@ -198,21 +278,24 @@ body {
     text-decoration: underline;
     padding:20px 20px;
     margin: auto;
-   
+    font-family: sans-serif;
 }
 
 .contact-description{
     text-align: center;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: bold;
-    letter-spacing: 2px;
     color: rgb(122, 10, 111);
+    font-family: serif;
+    margin:auto;
+    padding: 20px;
 }
 
 .address-content{
     color :rgb(122, 10, 111);
     font-size: 20px;
     font-weight: bold;
+    font-family: serif;
 
 }
 
@@ -220,18 +303,21 @@ body {
     color : rgb(122, 10, 111);
     font-size: 20px;
     font-weight: bold;
+    
 }
 
 .hours{
     color : rgb(122, 10, 111);
     font-size: 20px;
     font-weight: bold;
+    font-family: serif;
 }
 
 .newsletter{
     color : rgb(122, 10, 111);
     font-size: 20px;
     font-weight: bold;
+
 }
 
 .btn{
@@ -247,24 +333,24 @@ body {
     justify-content: space-between;
     gap: 30px;
     padding: 50px;
+    font-family: serif;
 }
 
 p {
     display: flex;
     align-items: center;
     gap: 10px; /* Adds spacing between icon and text */
+    font-family: serif;
 }
 
 .footer-content{
     text-align: center;
     color:white;
-    font-style: italic;
     background-color: rgb(122, 10, 111);
     padding:30px;
+    margin:auto;
+    font-family: serif;
 }
-
-
-
 
 
 
