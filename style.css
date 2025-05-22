@@ -13,14 +13,14 @@
     display: flex;
     justify-content:space-around;
     align-items:center;
-    padding: 10px 10px;
+    padding: min(20px, 2vw);
     background-color:beige;
     
 }
 
 .nav-links {
     display:flex;
-    gap: 20px;
+    gap: 1.5rem;
     align-items: center;
 }
 
@@ -34,7 +34,7 @@ body {
     text-align: center;
     color:rgb(122, 10, 111);
     text-decoration: underline;
-    padding: 20px 20px;
+    padding: min(20px, 2vw) 20px;
     margin: auto;   
     font-family: sans-serif;
     position: relative;
@@ -43,15 +43,15 @@ body {
 
 .home-description{
     
-    letter-spacing: 3px;
+    letter-spacing: 0.1em;
     margin:auto;
     color:rgb(122, 10, 111);
     font-family: serif;
     font-weight: bold;
-    font-size:30px;
-    padding: 40px;
+    font-size:2rem;
+    padding: min(40px, 4vw);
     text-align:center;
-    margin-bottom: 160px;
+    margin-bottom: 4.6em;
     position: relative;
     line-height: 1.5em;
 }
@@ -82,21 +82,21 @@ body {
     text-align: center;
     color:rgb(122, 10, 111);
     text-decoration: underline;
-    padding: 20px 20px;
+    padding: min(20px, 2vw) 20px;
     margin: auto;
     font-family: sans-serif;
    
 }
 
 .about-description{
-    padding: 40px;
-    font-size:26px;
+    padding: min(40px, 4vw);
+    font-size:1.5rem;
     font-weight: bold;
     font-family: serif;
     margin:auto;
     color:rgb(122, 10, 111);
     text-align:center;
-    margin-bottom: 25px;
+    margin-bottom: 3rem;
     
 }
 
@@ -125,7 +125,7 @@ body {
     text-align: center;
     color:rgb(122, 10, 111);
     text-decoration: underline;
-    padding: 20px 20px;
+    padding: min(20px, 2vw) 20px;
     margin: auto;
     font-family: sans-serif;
    
@@ -136,36 +136,37 @@ body {
     font-weight: bold;
     font-family: serif;
     color:rgb(122, 10, 111);
-    font-size: 26px;
+    font-size: 2rem;
     margin:auto;    
-    padding: 20px;
+    padding: min(30px, 4vw);
     
 }
 
 .grid-container {
     display:grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    gap: 30px; /* Spacing between grid items */
-    padding: 20px;
+    gap: 1rem; /* Spacing between grid items */
+    padding: min(20px, 2vw) 20px;
+    margin: auto;
     color:rgb(122, 10, 111);
-    font-size: 22px;
+    font-size: 1.5rem;
     
 }
 
 .card {
     background-color:beige; /* Light background */
-    padding: 20px;
+    padding: min(20px, 2vw) 20px;
     text-align: center;
-    border-radius: 20px; /* Rounded corners */
+    border-radius: 3rem; /* Rounded corners */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     
 }
 
   /* Icon styling */
 .card i {
-    font-size: 30px; /* Icon size */
+    font-size:  2rem; /* Icon size */
     color:rgb(122, 10, 111);/* Icon color */
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
     
     
 }
@@ -196,7 +197,7 @@ body {
     text-align: center;
     color:rgb(122, 10, 111);
     text-decoration: underline;
-    padding: 20px 20px;
+    padding: min(20px, 2vw) 20px;
     margin: auto;
     font-family: sans-serif;
    
@@ -204,22 +205,22 @@ body {
 
 .menu-description{
     text-align:center;
-    font-size:26px;
+    font-size:2rem;
     font-weight: bold;
     font-family: serif;
     margin:auto;
     color:rgb(122, 10, 111);
-    padding: 20px;
+    padding: min(20px, 4vw);
     
 }
 
 
 .menu-item {
     display: flex;
-    padding: 10px;
+    padding: min(20px, 2vw) 20px;
     align-items: center; /* Center items vertically */
-    gap: 30px; /* Adds spacing between image and text */
-    margin-bottom: 15px; /* Space between menu items */
+    gap: 1rem; /* Adds spacing between image and text */
+    margin-bottom: 0.2rem; /* Space between menu items */
     
 }
 
@@ -228,12 +229,12 @@ body {
 }
 
 .menu-item img {
-    margin-right: 20px; /* Adds spacing between the image and text */
+    margin-right: 1em; /* Adds spacing between the image and text */
    
 }
 
 .menu-text {
-    font-size: 18px;
+    font-size: 1.2em;
     color: rgb(122, 10, 111);
     font-family: serif;
     
@@ -247,7 +248,7 @@ body {
 .menu-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 1em;
     
 }
 
@@ -259,6 +260,7 @@ body {
 .menu-item{
     animation: slideIn 1.5s ease-out;
 }
+
 
 @keyframes fadeIn {
     0% { opacity: 0; }
@@ -276,24 +278,24 @@ body {
     text-align: center;
     color:rgb(122, 10, 111);
     text-decoration: underline;
-    padding:20px 20px;
+    padding: min(20px, 2vw) 20px;
     margin: auto;
     font-family: sans-serif;
 }
 
 .contact-description{
     text-align: center;
-    font-size: 26px;
+    font-size: 2em;
     font-weight: bold;
     color: rgb(122, 10, 111);
     font-family: serif;
     margin:auto;
-    padding: 20px;
+    padding: min(20px, 2vw) 20px;
 }
 
 .address-content{
     color :rgb(122, 10, 111);
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: bold;
     font-family: serif;
 
@@ -301,21 +303,21 @@ body {
 
 .social-media{
     color : rgb(122, 10, 111);
-    font-size: 20px;
+    font-size:1.4em;
     font-weight: bold;
     
 }
 
 .hours{
     color : rgb(122, 10, 111);
-    font-size: 20px;
+    font-size: 1.4em;
     font-weight: bold;
     font-family: serif;
 }
 
 .newsletter{
     color : rgb(122, 10, 111);
-    font-size: 20px;
+    font-size:1.4em;
     font-weight: bold;
 
 }
@@ -324,22 +326,22 @@ body {
     background-color: rgb(122, 10, 111);
     color: white;
     border-radius: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: min(10px, 1vw) 20px;
+    font-size: 1rem;
 }
 
 .contact-row {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
-    padding: 50px;
+    gap: 1rem;
+    padding: min(20px, 2vw) 20px;
     font-family: serif;
 }
 
 p {
     display: flex;
     align-items: center;
-    gap: 10px; /* Adds spacing between icon and text */
+    gap: 0.5em; /* Adds spacing between icon and text */
     font-family: serif;
 }
 
@@ -347,7 +349,7 @@ p {
     text-align: center;
     color:white;
     background-color: rgb(122, 10, 111);
-    padding:30px;
+    padding:min(20px, 2vw) 20px;
     margin:auto;
     font-family: serif;
 }
