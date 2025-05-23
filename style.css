@@ -14,7 +14,9 @@
     justify-content:space-around;
     align-items:center;
     padding: min(20px, 2vw);
-    background-color:beige;
+    background-color:#F5E3C5;
+    font-display:rgb(122, 10, 111);
+    
     
 }
 
@@ -50,21 +52,21 @@ body {
     font-weight: bold;
     font-size:2rem;
     padding: min(40px, 4vw);
-    text-align:center;
+    text-align:right;
     margin-bottom: 4.6em;
     position: relative;
     line-height: 1.5em;
 }
 
 
+
 .home::before {
     content: "";
-    position: absolute;
+    position:absolute;
+    background: url('templates/home.jpg');
+    background-size: cover; /* Cover the entire area */
     width: 100%;
-    height: 60%;
-    background: url('home.jpg') no-repeat center/cover; /* Background image */
-    opacity: 0.4; 
-    
+    height: 66%; /* Adjust height as needed */
     
 }
 
