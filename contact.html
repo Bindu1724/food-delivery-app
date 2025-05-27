@@ -13,20 +13,24 @@
 <body>
     <!--Header Section-->
     <header>
-        <nav class="navbar">
-            <div class="logo"><i>Healthy<span style="color: rgb(122, 10, 111);">Eats</span></i></div>
-            
-            <div class="nav-links">
-                <a href="home.html" class="nav-item nav-link">HOME</a>
-                <a href="about.html" class="nav-item nav-link">ABOUT US</a>
-                <a href="service.html" class="nav-item nav-link">SERVICE</a>
-                <a href="menu.html" class="nav-item nav-link">MENU</a>
-                <a href="contact.html" class="nav-item nav-link">CONTACT</a>
-                <button style="background-color: rgb(122, 10, 111); color:aliceblue; cursor: pointer; width:100px; height:50px;"onclick="document.location='default.asp' ">LOGIN</button>
-            </div>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"><i>Healthy<span style="color: rgb(122, 10, 111);">Eats</span></i></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <button style="background-color: rgb(122, 10, 111); color:aliceblue; cursor: pointer; width:100px; height:50px;"onclick="document.location='default.asp' ">LOGIN</button>
+                    <label for="check" class="close-menu"><i class ="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class ="fas fa-bars"></i></label>
+            </ul>
         </nav>
     </header>
-
+    
     <section class="contact">
     <h1 class="contact-title" style="letter-spacing:1px;">CONTACT</h1>
     <h3 class="contact-description" style="letter-spacing: 4px;">Feel Free To Contact Us</h3>
@@ -61,9 +65,9 @@
         <h4 class="newsletter-title" style="letter-spacing:3px; color:#ff0066; font-size:larger"><i>News Letter</i></h4>
         <p>Subscribe to our newsletter for the latest updates</p>
         <div class="input-group ">
-            <input type="text" class="form-control border-light" style="padding: 20px;" placeholder="Your Email">
+            <input type="text" class="form-control border-light" style="padding: 20px; margin-bottom: 10px;" placeholder="Your Email">
         </div>
-        <button type="button" class="btn" style="cursor: pointer;">Sign Up</button>
+        <button type="button" class="btn" style="cursor: pointer; margin-left: 20px;">Sign Up</button>
     </div>
     </div>
 </section>

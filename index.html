@@ -11,17 +11,21 @@
 <body >
     <!--Header Section-->
     <header>
-        <nav class="navbar">
-            <div class="logo"><i>Healthy<span style="color: rgb(122, 10, 111);">Eats</span></i></div>
-            
-            <div class="nav-links">
-                <a href="home.html" class="nav-item nav-link">HOME</a>
-                <a href="about.html" class="nav-item nav-link">ABOUT US</a>
-                <a href="service.html" class="nav-item nav-link">SERVICE</a>
-                <a href="menu.html" class="nav-item nav-link">MENU</a>
-                <a href="contact.html" class="nav-item nav-link">CONTACT</a>
-                <button style="background-color: rgb(122, 10, 111); color:aliceblue; cursor: pointer; width:100px; height:50px;"onclick="document.location='default.asp' ">LOGIN</button>
-            </div>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"><i>Healthy<span style="color: rgb(122, 10, 111);">Eats</span></i></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <button style="background-color: rgb(122, 10, 111); color:aliceblue; cursor: pointer; width:100px; height:50px;"onclick="document.location='default.asp' ">LOGIN</button>
+                    <label for="check" class="close-menu"><i class ="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class ="fas fa-bars"></i></label>
+            </ul>
         </nav>
     </header>
 
@@ -42,7 +46,7 @@
 
     <section class="service">
     <div class="service-content">
-        <h1 class="service-title" style="letter-spacing:1px;">OUR  SERVICES</h1>
+        <h1 class="service-title" id="services-index" style="letter-spacing:1px;">OUR  SERVICES</h1>
         <h3 class="service-description" style="letter-spacing:2px;">Explore Our Services</h3>
     </div>
     
@@ -73,7 +77,7 @@
 
     </section>
 
-    <section class="menu">
+    <section class="menupage">
     <div class="menu-content">
         <h1 class="menu-title" style="letter-spacing:1px;">MENU</h1>
         <h3 class="menu-description" style="letter-spacing:2px;">Check Our Nutritious Menu</h3>
@@ -282,9 +286,9 @@
         <h4 class="newsletter-title" style="letter-spacing:3px; color:#ff0066; font-size:larger"><i>News Letter</i></h4>
         <p>Subscribe to our newsletter for the latest updates</p>
         <div class="input-group ">
-            <input type="text" class="form-control border-light" style="padding: 20px;" placeholder="Your Email">
+            <input type="text" class="form-control border-light" style="padding: 20px; margin-bottom: 10px;" placeholder="Your Email">
         </div>
-        <button type="button" class="btn" style="cursor: pointer;">Sign Up</button>
+        <button type="button" class="btn" style="cursor: pointer; margin-left:5px">Sign Up</button>
     </div>
     </div>
     </section>
